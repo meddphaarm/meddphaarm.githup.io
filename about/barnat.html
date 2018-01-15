@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Barnat</title>
+        <link rel="stylesheet" href="../css/nav.css">
+ <link rel="stylesheet" href="../css/footer.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+
+function Function() {
+    var str = document.getElementById("dru").innerHTML; 
+    var txt = str.replace(/drug/ig,"medicine");
+    document.getElementById("dru").innerHTML = txt;
+}
+</script>
+        <style>
+            body{
+                margin:0;
+                padding:0; 
+            }
+           #header {
+                
+    height: 400px;
+    background-image: url(image/drug.png);
+    background-size: cover;
+    background-position-y: -45px;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #999999;
+    font-family: 'Shift', sans-serif;
+}
+p{
+    font-size:20px;
+    margin-left:50px;
+    margin-right:50px;
+}
+table.barna {
+  
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid #ef7799;
+  background-color: #FFFFFF;
+  width: 70%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: 170px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+table.barna #row{
+    background: #FFFFFF;
+   
+}
+table.barna #row th{
+    color:black;
+    text-align: center;
+    font-size: 27px;
+}
+table.barna td, table.barna th {
+    border: 2px solid #ef7799;
+  padding: 4px 4px;
+}
+table.barna tbody td {
+  font-size: 15px;
+}
+table.barna td:nth-child(even) {
+    background:#fff0b2;
+}
+table.barna thead {
+    background:#ef7799;
+  border-bottom: 0px solid #444444;
+}
+table.barna thead th {
+  font-size: 22px;
+  font-weight: bold;
+  color:#F0F0F0;
+  text-align: center;
+  border-left: 0px solid #ef7799;
+}
+table.barna thead th:first-child {
+  border-left: none;
+}
+table.barna tbody td a{
+    color:#000000;
+    text-decoration: none;
+    font-size:17px;
+    font-style: italic;
+}
+#border{
+ 
+    border-bottom: #666666 dashed 3px;
+}
+
+#content{
+ 
+    width:80%;
+   
+}
+.content_head{
+    text-align: center;
+
+}
+.content_body{
+    border-bottom: #666666 double 3px;
+}
+h1{
+    font-size: 38px;
+  text-align: center;
+ 
+}
+h3{
+    margin-left:10px;
+    margin-bottom:-15px;
+}
+.icon{
+    margin-left:138px;
+    width:70%;
+}
+ul{
+    margin-top:-15px;
+}
+ul li{  font-size:20px; color:#666666; list-style-type: circle;}
+  
+#panel, #flip {
+    padding: 5px;
+}
+#flip:hover{
+    color:#ef7799;
+    border:1px solid #999999;
+}
+#panel {
+    padding: 50px;
+    display: none;
+}
+#replace{
+    margin-left:20px;
+}
+
+        </style>
+    </head>
+    <body>
+        <header style="background-color:#ef7799;">
+            <div class="container">
+                <div id="logo">
+                    <h1><span class="mark">Med</span> Pharm</h1>
+                </div>
+            
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                 <li><a href="#">About</a>
+                     <ul style="background-color:#ef7799;">
+                       <li style="margin-top:12px;"><a href="hair.html">Hair</a></li>
+                       <li><a href="health.html">Health</a></li>
+                      <li><a href="barnat.html">Drugs</a></li>
+                 </ul>
+                 </li>
+                 
+                 <li><a href="../blej/blej.html">Shop</a></li>
+                   <li><a href="../kontakt/kontakti.html">Contact us</a></li>
+            </ul>
+        </nav>
+   </div>
+ </header>
+   
+        <div id="header">
+            
+        </div>
+ 
+        <div> 
+            <div id="drug">
+            <h1>What is  Drug</h1>
+            <p>A pharmaceutical drug (also referred to as medicine, medication, or simply as drug) is a drug used to diagnose, cure, treat, or prevent disease.
+            Drug therapy (pharmacotherapy) is an important part of the medical field and relies on the science of pharmacology for continual advancement and on pharmacy for appropriate management.
+            </br>A drug is any substance (other than food that provides nutritional support) that, when inhaled, injected, smoked, consumed, absorbed via a patch on the skin, or dissolved under the tongue causes a temporary physiological (and often psychological) change in the body.
+            </br>In pharmacology, a pharmaceutical drug, also called a medication or medicine, is a chemical substance used to treat, cure, prevent, or diagnose a disease or to promote well-being.
+            Traditionally drugs were obtained through extraction from medicinal plants, but more recently also by organic synthesis.Pharmaceutical drugs may be used for a limited duration,
+            or on a regular basis for chronic disorders</p>
+                  <p> Find medical information, terminology and advice including side effects, drug interactions, user ratings and reviews, medication over dose, warnings and uses.</br>
+                     Just click over the name in the tabel belove of which drug you want to know more. 
+                  </p>
+            </div>
+            <div id="replace">
+            <i>Want to replace the word drug with medicine.
+                </br>Just click the button belove.</i>
+            <p> <button onclick="Function()">Replace</button><p>
+            </div>
+       
+
+         
+ </div>    
+        
+        
+        <div id="border">
+        <table class="barna">
+<thead>
+<tr id="row">
+ <th colspan="6">Common Drugs</th>
+ 
+</tr>
+<tr>
+<th>A - B</th>
+<th>C - D</th>
+<th>E - L</th>
+<th>M - P</th>
+<th>R - Z</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td> <a href="https://www.webmd.com/drugs/2/drug-64439/abilify-oral/details">Abilify</a></td>
+  <td><a href="https://www.webmd.com/drugs/2/drug-16849/celebrex-oral/details">Celebrex</a></td>
+  <td><a href="https://www.webmd.com/drugs/2/drug-4896/effexor-xr-oral/details">Effexor XR</a></td>
+  <td><a href="https://www.webmd.com/drugs/2/drug-4896/effexor-xr-oral/details"></a>Mialis</td>
+  <td><a href="https://www.webmd.com/drugs/2/drug-4896/effexor-xr-oral/details">Effexor XR</a>Risperdal</td>
+</tr>
+<tr>
+<td> <a href="https://www.webmd.com/drugs/2/drug-9690/ambien-oral/details">Ambien</a></td>
+<td><a href="https://www.webmd.com/drugs/2/drug-4896/effexor-xr-oral/details">citalopram HBR</a></td>
+<td><a href="https://www.webmd.com/drugs/2/drug-4896/effexor-xr-oral/details">Flagyl</a></td>
+<td><a href="https://www.webmd.com/drugs/2/drug-4896/effexor-xr-oral/details">Macrobid</a></td>
+<td><a href="https://www.webmd.com/drugs/2/drug-4896/effexor-xr-oral/details">Ritalin</a></td>
+
+</tr>
+<tr>
+<td><a href="https://www.webmd.com/drugs/2/drug-64439/abilify-oral/details">Acyclovir</a></td>
+<td>Cipro</td>
+<td>gabapentin</td>
+<td>meloxicam</td>
+<td>Savella</td>
+</tr>
+<tr>
+<td><a href="https://www.webmd.com/drugs/2/drug-64439/abilify-oral/details">Adderall</a></td>
+<td>Cialis</td>
+<td>hydrochlorothiazide</td>
+<td>methadone HCL</td>
+<td>Seroquel</td>
+</tr>
+<tr>
+<td><a href="https://www.webmd.com/drugs/2/drug-64439/abilify-oral/details">allopurinol</a></td>
+<td>Celexa</td>
+<td>hydrocodone-acetaminophen</td>
+<td>methocarbamol</td>
+<td>simvastatin</td>
+</tr>
+<tr>
+<td><a href="https://www.webmd.com/drugs/2/drug-17410/actos-oral/details">Actos</a></td>
+<td>clindamycin HCl</td>
+<td>hydroxyzine HCl</td>
+<td>methylprednisolone</td>
+<td>Synthroid</td>
+</tr>
+<tr>
+<td>amitriptyline HCL</a></td>
+<td>clonazepam</td>
+<td>ibuprofen</td>
+<td>metronidazole</td>
+<td>Toprol XL</td>
+</tr>
+<tr>
+<td>amoxicillin</td>
+<td>Concerta</td>
+<td>Keflex</td>
+<td>Mobic</td>
+<td>tramadol HCL</td>
+</tr>
+<tr>
+<td>atenolol</td>
+<td>Coumadin</td>
+<td>Keppra</td>
+<td>morphine SULFATE</td>
+<td>Toprol XXL</td>
+</tr>
+<tr>
+<td>Ativan</td>
+<td>Crestor</td>
+<td>Levaquin</td>
+<td>nabumetonell</td>
+<td>trazodone HCL</td>
+</tr>
+<tr>
+<td>azithromycin</td>
+<td>cyclobenzaprine HCL</td>
+<td>Lemetrin</td>
+<td>Namenda Solution</td>
+<td>Valium</td>
+</tr>
+<tr>
+<td>baclofen</td>
+<td>Cymbalta</td>
+<td>levothyroxine SODIUM</td>
+<td>Neurontin capsule</td>
+<td>Valtrex</td>
+</tr>
+<tr>
+<td>Bactrim DS</td>
+<td>Depakote</td>
+<td>Cenafleks</td>
+<td>nortriptyline HCL</td>
+<td>Vicodin ES</td>
+</tr>
+<tr>
+<td>Benadryl</td>
+<td>Dexilant</td>
+<td>Lexapro</td>
+<td>OxyContin</td>
+<td>Vyvanse</td>
+  </tr>
+  <tr>
+<td>benzonatate</td>
+<td>dicyclomine HCL</td>
+<td>Lipitor</td>
+<td>pantoprazole SODIUM</td>
+<td>Wellbutrin XL</td>
+  </tr>
+  <tr>
+<td>bupropion HCl</td>
+<td>Dilaudid</td>
+<td>Lotonix</td>
+<td>Percocet</td>
+<td>Xanax</td>
+</tr>
+<tr>
+<td>Bystolic</td>
+<td>doxycycline calcium Syrup</td>
+<td>lisinopril</td>
+<td>phentermine HCL</td>
+<td>Wellbutrin XXL</td>
+  </tr>
+  <tr>
+<td>B-12 Lozenge</td>
+<td>D3 DOTS</td>
+<td>lorazepam</td>
+<td>Plaquenil</td>
+<td>Zofran</td>
+<tr> 
+</tr>
+<td>B-12</td>
+<td>Daily Amino</td>
+<td>losartan POTASSIUM</td>
+<td>Plavix</td>
+<td>trazodone HCL</td>
+  </tr>
+ <tr>
+<td>B Complete</td>
+<td>daclatasvir tablet</td>
+<td>Lyrica</td>
+<td>Pradaxa</td>
+<td>Z-Tuss AC</td>
+  </tr>
+  <tr>
+<td>B COMPLEX</td>
+<td>dacarbazine Vial</td>
+<td>lrednisone</td>
+<td>pravastatin SODIUM</td>
+<td>Z-Sleep</td>
+  </tr>
+</tbody>
+</table>
+        </div>
+        
+                <article id="content">
+                    <h1 style="color:#ff5630;">The Top 10 diseases in the World</h1>
+<p>When people think of the deadliest diseases in the world, their minds probably jump to the fast-acting, incurable ones that grab headlines from time to time. But in fact, many of these types of diseases don’t rank in the top 10 causes of worldwide deaths. An estimated 56.4 million people passed away worldwide in 2015, and 68 percent of them were due to diseases that progressed slowly.
+Perhaps even more surprising is that several of the deadliest diseases are partially preventable. Non-preventable factors include where a person lives, access to preventive care, and quality of healthcare. These all factor into risk. But there are still steps everyone can take to lower their risk.
+Read on to see the top 10 diseases causing the most deaths worldwide, according to the World Health Organization (WHO).</p>
+
+<h2 class="content_head">1. Ischemic heart disease,or coronary artery disease</h2>
+<div class="content_body">
+
+    <img class="icon" src="../image/D1.jpg" alt="Schemic Heart Disease">
+
+<p>The deadliest disease in the world is coronary artery
+disease (CAD). Also called ischemic heart disease, CAD occurs when the blood
+vessels that supply blood to the heart become narrowed. Untreated CAD can lead
+to chest pain, heart failure, and arrhythmias.</p>
+
+<h3>Impact of CAD across the world</h3>
+<p>Although it’s still the leading cause of death, mortality
+rates have declined in many European countries and in the United States. This
+may be due to better public health education, access to healthcare, and forms
+of prevention. However, in many developing nations, mortality rates of CAD are
+on the rise. An increasing life span, socioeconomic changes, and lifestyle risk
+factors play a role in this rise.</p>
+
+<h3>Risk factors and prevention</h3>
+<p>Risk factors for CAD include:</p>
+<ul><li>high blood pressure</li>
+    <li>high cholesterol</li>
+    <li>smoking</li>
+    <li>family history of CAD</li>
+    <li>diabetes</li>
+    <li>being overweight</li></ul>
+
+<p>You can prevent CAD with medications and by maintaining good
+heart health. Some steps you can take to decrease your risk include:</p>
+
+<ul><li>exercising regularly</li><li>maintaining a healthy weight</li><li>eating a balanced diet that’s low in sodium and
+high in fruits and vegetables</li><li>avoiding smoking</li><li>drinking only in moderation</li></ul>
+</div>
+
+
+<h2 class="content_head">2. Stroke</h2>
+<div class="content_body">
+    <img class="icon" src="../image/2.jpg" alt="Stroke">
+<p>A stroke occurs when an artery in your brain is blocked or
+leaks. This causes the oxygen-deprived brain cells to begin dying within
+minutes. During a stroke, you feel sudden numbness and confusion or have
+trouble walking and seeing. If left untreated, a stroke can cause long-term
+disability.</p>
+
+<p>In fact, strokes are the leading cause
+of long-term disabilities. People who receive treatment within 3 hours of
+having a stroke are less likely to have disabilities. The <a href="https://www.cdc.gov/stroke/facts.htm">Centers for Disease
+Control and Prevention (CDC)</a> reports that 93 percent of people knew
+sudden numbness on one side was a stroke symptom. But only 38 percent knew all
+the symptoms that would prompt them to seek emergency care. </p>
+
+<h3>Risk factors and prevention</h3>
+<p>Risk factors for stroke include:</p>
+<ul><li>high blood pressure</li><li>family history of stroke</li><li>smoking, especially when combined with oral
+contraceptives</li><li>being African-American</li><li>being female</li></ul>
+
+<p>Some risk factors of strokes can be reduced with
+preventative care, medications, and lifestyle changes. In general, good health
+habits can lower your risk.</p>
+
+<p>Stroke prevention methods may include controlling high blood
+pressure with medications or surgery. You should also maintain a healthy
+lifestyle, complete with regular exercise and a healthy diet that’s low in
+sodium. Avoid smoking, and drink only in moderation, as these activities
+increase your risk of
+stroke.</p>
+</div>
+      
+
+<h2 class="content_head">3. Lower respiratory infections</h2>
+<div class="content_body">
+
+    <img class="icon" src="../image/3.jpg" alt="Lower respiratory infections">
+    
+<p>A lower respiratory infection is an infection in your
+airways and lungs. It can be due to:</p>
+<ul><li>influenza, or the flu</li><li>pneumonia</li><li>bronchitis</li><li>tuberculosis</li></ul>
+
+<p>Viruses usually cause lower respiratory infections. They can
+also be caused by bacteria. Coughing is the main symptom of a lower respiratory
+infection. You may also feel breathlessness, wheezing, and a tight feeling in
+your chest. Untreated lower respiratory infections can lead to breathing
+failure and death.</p>
+
+<h3>Risk factors and prevention</h3>
+
+<p>Risk factors for lower respiratory infection include:</p>
+
+<ul><li>the flu</li><li>poor air quality or frequent exposure to lung
+irritants</li><li>smoking</li><li>a weak immune system</li><li>crowded childcare settings, which mainly affects
+infants</li><li>asthma</li><li>HIV</li></ul>
+
+<p>One of the best preventative measures you can take against
+lower respiratory
+infections is to get the flu shot every year. People at high risk of
+pneumonia can also get a vaccine. Wash your hands regularly with soap and water
+to avoid transmitted bacteria, especially before touching your face and before
+eating. Stay at home and rest until you feel better if you have a respiratory
+infection, as rest improves healing.</p>
+</div>
+<div id="flip" style="text-align:center; font-size: 32px; cursor: pointer;">Click for more</div>
+<div id="panel">
+
+  
+
+
+<section id="fade">
+<h2 class="content_head">4. Chronic obstructive pulmonary disease</h2>
+<div class="content_body">
+
+    <img class="icon" src="../image/4.jpg" alt="Chronic obstructive pulmonary disease">
+
+<p>Chronic obstructive pulmonary disease(COPD)is a long-term, progressive
+lung disease that makes breathing difficult. Chronic bronchitis and emphysema
+are types of COPD. In 2004, about 64 million people
+around the world were living with COPD.</p>
+
+<h3>Risk factors and prevention</h3>
+<p>Risk factors for COPD include:</p>
+<ul><li>smoking or secondhand smoke</li><li>lung irritants like chemical fumes</li><li>family history, with the AATD gene being linked
+to COPD</li><li>history of respiratory infections as a child</li></ul>
+
+<p>There’s no cure for COPD, but its progression can be slowed
+with medication. The best ways to prevent COPD are to stop smoking and to avoid
+secondhand smoke and other lung irritants. If you experience any COPD
+symptoms, getting treatment as soon as possible increases your outlook.</p>
+</div>
+
+<h2 class="content_head">5. Trachea, bronchus, and lung cancers</h2>
+<div class="content_body">
+      
+    <img class="icon" src="../image/5.jpg" alt="Trachea, bronchus, and lung cancers">
+    
+<p>Respiratory cancers include cancers of the trachea, larynx,
+bronchus, and lungs.
+The main causes are smoking, secondhand smoke, and environmental toxins. But
+household pollutions such as fuels and mold also contribute.</p>
+
+<h3>Risk factors and prevention</h3>
+<p>Trachea, bronchus, and lung cancers can affect anyone, but they’re
+most likely to affect those who have a history of smoking or tobacco use. Other
+risk factors for these cancers include family history and exposure to
+environmental factors, such as diesel fumes.</p>
+<p>Aside from avoiding fumes and tobacco products, it isn’t
+known if there’s anything else that can be done to prevent lung cancers. However,
+early detection can improve your outlook and reduce the symptoms of respiratory
+cancer.</p>
+</div>
+
+<h2 class="content_head">6. Diabetes mellitus</h2>
+<div class="content_body">
+
+    <img class="icon" src="../image/6.jpg" alt="Diabetes mellitus">
+
+<p>Diabetes is a group of diseases that affect insulin production and use. In type 1
+diabetes, the pancreas can’t produce insulin. The cause isn’t known. In type 2
+diabetes, the pancreas doesn’t produce enough insulin, or insulin can’t be used
+effectively. Type 2 diabetes can be caused by a number of factors, including
+poor diet, lack of exercise, and being overweight.</p>
+
+<p>People in low- to middle-income countries are more likely to
+die of complications from diabetes.</p>
+
+<h3>Risk factors and prevention</h3>
+<p>Risk factors for diabetes include:</p>
+<ul><li>excess body weight</li><li>high blood pressure</li><li>older age</li><li>not exercising regularly</li><li>an unhealthy diet</li></ul>
+
+<p>While diabetes isn’t always preventable, you can control the
+severity of symptoms by exercising regularly and maintaining good nutrition. Adding
+more fiber to your diet can help with controlling your blood sugar.</p>
+</div>
+
+<h2 class="content_head">7. Alzheimer’s disease and other dementias</h2>
+<div class="content_body">
+
+    <img class="icon" src="../image/7.jpg" alt="Alzheimer’s disease and other dementias">    
+
+<p>When you think of Alzheimer’s disease or dementia, you might
+think of a loss of memory, but you might not think of a loss of life. Alzheimer’s
+disease is a progressive disease that destroys memory and interrupts normal
+mental functions. These include thinking, reasoning, and typical behavior. </p>
+
+<p>Alzheimer’s disease is the most common type of dementia — 60 to 80
+percent of dementia cases are in fact Alzheimer’s. The disease starts off
+by causing mild memory problems, difficulty recalling information, and slips in
+recollection. Over time, however, the disease progresses and you may not have
+memory of large periods of time. A 2014 study found that the
+number of deaths in the United States due to Alzheimer’s may be higher than
+reported.</p>
+
+<h3>Risk factors and prevention</h3>
+<p>Risk factors for Alzheimer’s disease include:</p>
+<ul><li>being older than 65</li><li>a family history of the disease</li><li>inheriting genes for the disease from your
+parents</li><li>existing mild cognitive impairment</li><li>Down syndrome</li><li>unhealthy lifestyle</li><li>being female</li><li>previous head trauma</li><li>being shut off from a community or having poor
+engagement with other people for extended periods of time</li></ul>
+
+<p>There’s not currently a way to prevent Alzheimer’s disease.
+Researches aren’t clear why some people develop it and others don’t. As they
+work to understand this, they’re also working to find preventive techniques.</p>
+
+<p>One thing that may be helpful in reducing your risk of the
+disease is a heart-healthy diet. A diet that’s high in fruits and vegetables,
+low in saturated fats from meat and dairy, and high in sources of good fats
+like nuts, olive oil, and lean fish may help you reduce your risk of more than
+just heart disease — they may protect your brain from Alzheimer’s disease, too.</p>
+</div>
+
+<h2 class="content_head"> 8. Dehydration due to diarrheal diseases</h2>
+<div class="content_body">
+
+    <img class="icon" src="../image/8.jpg" alt="Dehydration due to diarrheal diseases">
+
+<p>Diarrhea is when you pass three or more loose stools in a
+day. If your diarrhea lasts more than a few days, your body loses too much
+water and salt. This causes dehydration, which can lead to death. Diarrhea is
+usually caused by an intestinal virus or bacteria transmitted through
+contaminated water or food. It’s particularly widespread in developing nations with
+poor sanitary conditions.</p>
+
+<p>Diarrheal disease is the second top cause of death in children younger than 5 years. About 760,000
+children die from diarrheal diseases each year.</p>
+
+<h3>Risk factors and prevention</h3>
+<p>Risk factors for diarrheal diseases include:</p>
+<ul><li>living in an area with poor sanitary conditions</li><li>no access to clean water</li><li>age, with children being the most likely to
+experience severe symptoms of diarrheal diseases</li><li>malnourishment</li><li>a weakened immune system</li></ul>
+
+<p>According to UNICEF, the best method of
+prevention is practicing good hygiene. Good handwashing techniques can reduce
+the incidence of diarrheal diseases by 40 percent. Improved sanitization and
+water quality as well as access to early medical intervention can also help
+prevent diarrheal diseases. </p>
+</div>
+
+<h2 class="content_head">9. Tuberculosis</h2>
+<div class="content_body">
+
+    <img class="icon" src="../image/9.jpg" alt="Tuberculosis">
+    
+<p>Tuberculosis
+(TB)is a lung condition caused by bacteria called <em>Mycobacterium tuberculosis</em>. It’s a
+treatable airborne virus, although some strains are resistant to conventional
+treatments. TB is one of the top causes of death in people who have HIV. About 35
+percent of HIV-related deaths are due to TB.</p>
+
+<p>The cases of TB have fallen 1.5
+percent each year since 2000. The goal is to end TB by 2030.</p>
+
+<h3>Risk factors and prevention</h3>
+<p>Risk factors for tuberculosis include:</p>
+<ul><li>diabetes</li><li>HIV infection</li><li>a lower body weight</li><li>proximity to others with TB</li><li>regular use of certain medications like
+corticosteroids or drugs that suppress the immune system</li></ul>
+
+<p>The best prevention against TB is to get the bacillus
+Calmette-Guerin (BCG) vaccine. This is commonly given to children. If you think
+you’ve been exposed to TB bacteria, you can start taking a treatment medication
+called chemoprophylaxis to reduce the likelihood of developing the condition.</p>
+</div>
+
+<h2 class="content_head">10. Cirrhosis</h2>
+<div class="content_body">
+      
+    <img class="icon"  src="../image/10.jpg" alt=" Cirrhosis">
+    
+<p>Cirrhosis is the
+result of chronic or long-term scarring and damage to the liver. The damage may
+be the result of a kidney disease, or it can be caused by conditions like hepatitis
+and chronic alcoholism. A healthy liver filters harmful substances from your
+blood and sends healthy blood into your body. As substances damage the liver,
+scar tissue forms. As more scar tissue forms, the liver has to work harder to
+function properly. Ultimately, the liver may stop working.</p>
+
+<h3>Risk factors and prevention</h3>
+<p>Risk factors for
+cirrhosis include:</p>
+<ul><li>chronic alcohol use</li><li>fat accumulation around the liver
+(nonalcoholic fatty liver disease)</li><li>chronic viral hepatitis</li></ul>
+
+<p>Stay away from the
+behaviors that can lead to liver damage to help prevent cirrhosis. Long-term
+alcohol use and abuse is one of the leading causes of cirrhosis, so avoiding
+alcohol can help you prevent damage. Likewise, you can avoid nonalcoholic fatty
+liver disease by eating a diet that’s healthy, rich in fruits and vegetables,
+and low in sugar and fat. Lastly, you can reduce the likelihood of contracting
+viral hepatitis by using protection during sex and by avoiding sharing anything
+that could have traces of blood. This includes needles, razors, toothbrushes,
+and more.</p>
+</div>
+
+<h2 class="content_head">The takeaway</h2>
+<div class="content_body">
+
+<p>While deaths from some diseases have increased, those from
+more serious conditions have also decreased. Some factors, such as an increasing
+life span, naturally increase the incidence of diseases such as CAD, stroke,
+and heart disease. But many of the diseases on this list are preventable and
+treatable. As medicine continues to advance and prevention education grows, we
+may see a reduction in death rates from these diseases.</p>
+
+<p>A good approach to lowering your risk of any of these
+conditions is to live a healthy lifestyle with good nutrition and exercise.
+Avoiding smoking and drinking in moderation can also help. For bacterial or
+viral infections, proper handwashing can help prevent or reduce your risk.</p>
+
+</div>
+</div>
+</article>
+     
+       
+<footer class="footer-distributed"  style="background-color:#ef7799;">
+    <div class="footer-left">
+
+ <h3>Med<span>Pharm</span></h3>
+
+     <p class="footer-links">
+     <a href="home.html">Home</a>
+     <a href="hair.html">Hair</a>
+     <a href="barna.html">Drug</a>
+     <a href="health.html">Health</a>				·
+     <a href="blej.html">Shop</a>	
+     <a href="kontakti.html">Contact</a>
+     </p>
+<p class="footer-company-name">MedPharm &copy; 2017</p>
+    </div>
+
+<div class="footer-center">
+
+ <div>
+    <img src="../image/location1.png" alt="location">	
+    <p><span>21 Revolution Street</span> Prishtine, Kosov</p>
+ </div>
+
+ <div>
+    <img src="../image/phone1.png" alt="phone">
+    <p>+1 555 123456</p>
+ </div>
+
+ <div>
+    <img src="../image/email1.png" alt="email">
+    <p>medpharm@med.com</p>
+ </div>
+
+ </div>
+
+ <div class="footer-right">
+ <p class="footer-company-about">
+   <span>MedPharm</span>
+  Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+    </p>
+
+    <div class="footer-icons">
+        <a href="https://web.facebook.com/?_rdc=1&_rdr"> <img src="../image/facebook1.png" alt="Flickr"/></a>
+        <a href="https://www.instagram.com/"> <img  src="../image/insta1.jpg" alt="Flickr"/></a>
+        <a href="https://twitter.com/"> <img  src="../image/twitter1.png" alt="Flickr"/></a>
+        			
+    </div>
+ </div>
+</footer>
+    </body>
+       <script>
+        function Function() {
+    var str = document.getElementById("drug").innerHTML; 
+    var txt = str.replace(/drug/ig,"medicine");
+    document.getElementById("drug").innerHTML = txt;}
+  
+
+
+        function Function() {
+    var str = document.getElementById("drug").innerHTML; 
+    var txt = str.replace(/drug/ig,"medicine");
+    document.getElementById("drug").innerHTML = txt;
+}
+</script>  
+</html>

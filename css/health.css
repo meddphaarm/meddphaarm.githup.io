@@ -1,0 +1,45 @@
+body{
+     margin:0;
+     padding:0;
+     background-color:#ffffff;
+     font-family: arial;
+}
+ #content{
+  margin:auto;
+  
+     border-radius: 20px;
+    
+        width:85%;
+    
+    position: relative;
+}
+#headcover img{
+   height: 450px;
+     border-bottom: 3px solid #999999;
+    margin:-8px 0 0 0;
+    width:100%;
+    
+}
+.article{
+    
+    text-align: center;
+    border-bottom: 4px dotted #999999;
+  
+    
+}
+.article h1{
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+#con {
+    text-align: right;
+}
+.con_t{
+    text-align: center;
+    margin-top:50px;
+  
+}
+.con_t button{
+    color: #666666;
+    background-color: #95b3fd;
+}

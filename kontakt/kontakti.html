@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/contactstyle.css">
+    <link rel="stylesheet" href="../css/nav.css">
+     <link rel="stylesheet" href="../css/footer.css">
+
+     <script src="../js/jquery-3.2.1.min.js"></script>
+     <script>
+         function visitCounter(){
+             if(typeof(Storage)!=="undefined"){
+                 if(localStorage.clickcount){
+                     localStorage.clickcount=Number(localStorage.clickcount)+1;
+                 }
+                 else{
+                     localStorage.clickcount=1;
+                 }
+                 document.getElementById("vis").innerHTML="Thank you for coming to our webiste......visited: "+localStorage.clickcount+" time(s).";}
+                 else{
+                     document.getElementById("vis").innerHTML="Sorry,your browse does not support web storage";
+                 }
+             
+         }
+     </script>
+</head>
+<body>
+        <header>
+          <div class="container">
+              <div id="logo">
+                 <h1><span class="mark">Med</span> Pharm</h1>
+              </div>
+          
+      
+      <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">About</a>
+                 <ul>
+                      <li><a href="../about/hair.html">Hair</a></li>
+                       <li><a href="#">Skin</a></li>
+                      <li><a href="../about/barnat.html">Drugs</a></li>
+                 </ul>
+                 </li>
+                 <li><a href="../blej/blej.html">Shop</a></li>
+                   <li class="current"><a href="kontakti.html">Contact us</a></li>
+            </ul>
+        </nav>
+          </div>
+      </header>
+    
+  <BUTTON><a href="snake.html">Play snake here</a></BUTTON>
+    
+    <h3><code>Contact Form</code></h3>
+
+    <div class="containe">
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">First Name</label>
+            <input type="text" id="name" name="firstname"  placeholder="Your name.." autocomplete="on">
+
+            <label for="surname">Surname</label>
+            <input type="text" id="surname" name="lastname" placeholder="Your last name.." autocomplete="on">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="lpassword" placeholder="Your secret number.." autocomplete="off">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." autocomplete="off" style="height:200px"></textarea>
+
+            <input type="Submit" value="Submit" >
+        </form>
+    </div>
+    
+    
+         <footer>
+            <a href="https://www.google.com/maps/search/my+location/">Kliko per ta pare lokacionin</a>
+            <p><em>Copyright &COPY; 2017 MedPharm</em></p>
+        </footer>
+
+
+</script>
+    </div>
+    <div id="last">
+    <p>Please click the button belove always when you leave to see how many times you visited our website</p>
+   <p><button onclick="visitCounter()" type="button">Click!</button></p>
+    <div id="vis"></div>
+        </div>
+    
+    
+<h1>Google Map</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Med<span>Pharm</span></h3>
+
+				<p class="footer-links">
+					<a href="../index.html">Home</a>
+					·
+					<a href="../about/hair.html">Hair</a>
+					·
+					<a href="../about/barna.html">Drug</a>
+					·
+					<a href="../about/health.html">Health</a>
+					·
+					<a href="../blej/blej.html">Shop</a>
+					·
+					<a href="kontakti.html">Contact</a>
+				</p>
+
+				<p class="footer-company-name">MedPharm &copy; 2017</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+                                    <img src="../image/location.png" alt="location">
+					<p><span>21 Revolution Street</span> Prishtine, Kosov</p>
+				</div>
+
+				<div>
+					<img src="../image/phone.png" alt="phone">
+					<p>+1 555 123456</p>
+				</div>
+
+				<div>
+					<img src="../image/email.png" alt="email">
+					<p>medpharm@med.com</p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>MedPharm</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://web.facebook.com/?_rdc=1&_rdr"> <img src="../image/facebook.png" alt="Flickr"/></a>
+                                        <a href="https://www.instagram.com/"> <img src="../image/insta.jpg" alt="Flickr"/></a>
+                                        <a href="https://twitter.com/"> <img src="../image/twitter.png" alt="Flickr"/></a>
+                                      
+					
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+
+
+
+
+        <script type="">
+  
+       validateForm = function() {
+             if ($("input").val() === "") {
+                 alert("Ju lutem mbushini te gjitha hapsirat per shenim;");
+
+             }
+             else {
+              confirm("A jeni te sigurte ??")
+             }
+             
+          }
+        
+
+
+            function myMap() {
+            var mapProp= {
+                center:new google.maps.LatLng(42.663876,21.162935),
+                zoom:5,
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwkBxuATCWlQmm2CGp6-EnZYdVvITvNJA&callback=myMap"></script>
+    
+</body>
+
+</html>

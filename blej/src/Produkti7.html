@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="../../css/productstyle.css">
+</head>
+<body>
+
+		<div class="div1">
+		<div class="productReview">
+			<h1>Mjalte per shtim peshe</h1>
+			<img src="../../foto/fototM/produkti7.jpg">
+		</div>
+
+		</div>
+
+
+		<div class="div2">
+				<div class="moreInfo">
+					<ul>
+						<br>
+						<li><H1><b>10€</b></H1></li>
+							<br><br>
+						<li>Numri i artikullit:<b>330094</b></li>
+						<br>
+						<li>Te shitura:<b> 16</b></li>
+						<br>
+						<li>Te mbetura:<b> 8</b></li>
+					</ul>
+					<div clas="sasia">
+					<h3>sasia:</h3>
+					<input type="radio" name="sasia"  value ="1">1
+		            <input type="radio" name ="sasia"	value= "2">2
+                    <input type ="radio" name="sasia" value="3">3
+                     <input type ="radio" name="sasia" value="4">4
+				</div>
+			    </div>
+				<form method="post" action="mailto:youremail@youremail.com" >
+					<input id="porosit" type="submit" value="Porosit" /> 
+				</form>
+		</div>
+
+
+<div class="div3">
+	<h2 style="text-align: center;">Pershkrim per produktin</h2>	
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+	<audio controls>
+		  <source src="../../audio/audio1.mp3" type="audio/ogg">
+		  <source src="../../audio/audio1.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<div id="rezultati"></div>
+
+	<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+    // Store
+    localStorage.setItem("kompania", "Med Pharm ");
+    // Retrieve
+    document.getElementById("rezultati").innerHTML = localStorage.getItem("kompania");
+} else {
+    document.getElementById("rezultati").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+
+
+alert(asd);
+</script>
+
+
+</body>
+</html>

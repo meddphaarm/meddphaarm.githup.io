@@ -1,0 +1,108 @@
+font-face {
+			    font-family: 'NewFont';
+			    src: url('gestareg-webfont.eot');
+			}
+		@keyframes backgroundChange {
+
+					    0%   {background-color:red; left:0px; top:0px;}
+					    25%  {background-color:yellow; left:50px; top:0px;}
+					    50%  {background-color:blue; left:50px; top:50px;}
+					    75%  {background-color:green; left:0px; top:50px;}
+					    100% {background-color:red; left:0px; top:0px;}
+					}
+		body {
+			background-color: #ebebeb;
+			 background: linear-gradient(#E8E8E8, #A8A8A8); 
+		}
+		body *{
+			margin-left: 0;
+		}
+		div{
+			display: inline-block;
+		}
+		.div1 {
+            margin-left: 105px;
+			height: 500px;
+			width: 60%;
+			background-color: #f5f5f5;
+			border: 1px solid #ebebeb;
+		}
+		.div2 {
+            margin-left: 55px;
+			background-color: #FFFFE0;
+			text-shadow: 0.5px 0.5px grey;
+			position: relative;
+	        animation-name: backgroundChange;
+   			animation-duration: 8s;
+			}
+
+		.div2 div {
+			display: block;
+		}
+		.moreInfo {
+			height: 230px;
+			width: 90%;
+			margin: 0;
+		}
+		p {
+			font-family: NewFont;
+		}
+		#porosit {
+			height: 100px;
+			width: 90%;
+		}
+		.div2 *{
+                    margin:0;
+			
+		}
+
+		.div3{
+			height: 200px;
+			width: 60%;
+			background-color: #FAFAD2;
+			margin-top: 2%;
+			margin-left: 8%;
+			word-wrap: break-word;
+		    border: 2px solid grey;
+		    outline: 1px solid grey;
+		    outline-offset: 1px;
+		    column-count: 3;
+
+
+		}
+
+		.productReview {
+			width: 80%;
+			margin-left: 27%;
+		}
+		.productReview h1 {
+			transform: translate(90px, 0)
+		}
+		.productReview img {
+			height: 300px;
+			width: 300px;
+    		transition: width 2s, height 2s;
+    	}
+    	.productReview img:hover {
+    		height: 400px;
+    		width: 400px;
+    	}
+		}
+		ul {
+			  list-style-type: none;
+			}
+		li {
+			margin-top: 10%;
+		}
+		#porosit {
+			font-size: 20px;
+			margin-left: 48%;
+			height: 30px;
+			width: 90px;
+			margin-top: 20%;
+			transform: rotateZ(3deg);
+		}
+		.sasia {
+			margin-left: 19%;
+			margin-top: 10%;
+		}

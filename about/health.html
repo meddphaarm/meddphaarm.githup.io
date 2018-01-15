@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Health</title>
+        <meta charset="UTF-8">
+         <link rel="stylesheet" href="../css/nav.css">
+          <link rel="stylesheet" href="../css/health.css">
+       
+          <link rel="stylesheet" href="../css/footer.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+       
+          <header>
+            <div class="container">
+                <div id="logo">
+                    <h1><span class="mark">Med</span> Pharm</h1>
+                </div>
+            
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                 <li><a href="#">About</a>
+                     <ul>
+                         <li style="margin-top:12px;"><a href="hair.html">Hair</a></li>
+                       <li class="current"><a href="health.html">Health</a></li>
+                      <li><a href="barnat.html">Drugs</a></li>
+                 </ul>
+                 </li>
+                 
+                 <li><a href="blej.html">Shop</a></li>
+                   <li><a href="kontakti.html">Contact us</a></li>
+            </ul>
+        </nav>
+   </div>
+ </header>
+        <div id="headcover">
+             <img src="../image/health1.jpg" alt="health">
+        </div>  
+        
+      <div id="content">
+        <section class="article">
+            
+            <h1>Exercise & Fitness</h1>
+            
+            
+            
+            <p>Regular physical activity is good for your body, reducing the risk that you’ll develop high blood pressure, heart disease, colon cancer or diabetes.
+</br>Exercise is also good for your mind. Regular activity can reduce stress, anxiety and depression. Plus, staying active helps people maintain their strength, flexibility and endurance as they age.
+                </br>Exercising regularly, every day if possible, is the single most important thing you can do for your health.
+                In the short term, exercise helps to control appetite, boost mood, and improve sleep. 
+                In the long term, it reduces the risk of heart disease, stroke, diabetes, dementia, depression, and many cancers. 
+                The Centers for Disease Control and Prevention recommend the following:</p>
+            
+            <h3>For adults of all ages</h3>
+            
+            <ul>
+                <li>At least 150 minutes of moderate aerobic exercise like brisk walking or 75 minutes of rigorous exercise like running (or an equivalent mix of both) every week.
+                    It's fine to break up exercise into smaller sessions as long as each one lasts at least 10 minutes.</li>
+                <li>
+                    Strength-training that works all major muscle groups—legs, hips, back, abdomen, chest, shoulders, and arms—at least two days a week.
+                    Strength training may involve lifting weights, using resistance bands, or exercises like push-ups and sit-ups, in which your body weight furnishes the resistance.
+            </ul>
+            
+            <h3>For pregnant women</h3>
+            <p>The guidelines for aerobic exercise are considered safe for most pregnant women.
+                The CDC makes no recommendation for strength training. It’s a good idea to review your exercise plan with your doctor.</p>
+            
+            <h3>For children</h3>
+            <p>At least 60 minutes of physical activity a day, most of which should be devoted to aerobic exercise.
+                Children should do vigorous exercise and strength training, such as push-ups or gymnastics, on at least three days </p>
+  <img src="../image/heart-health.jpg" alt="heart">
+        </section>
+            
+        
+        
+        
+        
+        <div class="article">
+            <h2>Check your BMI</h2>
+            <p>Body Mass Index – (BMI) is a guide to the healthy weight range for your height, it's used by the government and health professionals.</p>
+     <h1>Body Mass Index Calculator</h1>
+    <p>Enter your height: <input type="text" id="height"/>
+        <select type="multiple" id="heightunits">
+            <option value="metres" selected="selected">metres</option>
+            <option value="inches">inches</option>
+        </select>
+         </p>
+    <p>Enter your weight: <input type="text" id="weight"/>
+        <select type="multiple" id="weightunits">
+            <option value="kg" selected="selected">kilograms</option>
+            <option value="lb">pounds</option>
+        </select>
+    </p>
+    <input type="submit" value="computeBMI" onclick="computeBMI();">
+    <h1>Your BMI is: <span id="output">?</span></h1>
+
+    <h2>This means you are: <span id="comment"> ?</span> </h2>
+
+ <img src="../image/heart-health.jpg" alt="heart">    
+        </div>
+        
+        
+        
+       
+          <div class="con_t">
+          <h2>Belove you can see how lungs look of e person who smoke and who dont smoke.</h2>
+          
+          <button onclick="document.getElementById('Image').src='../image/nosmoker.jpg'">Non Smokers</button>
+          
+          <img id="Image" src="../image/cig.png" style="width:200px">
+          
+          <button onclick="document.getElementById('Image').src='../image/smokers.jpg'">Smokers</button>
+         </div>
+          <div class="con_t">
+              
+          <h2>Are you Smoker ?</h2>
+          <h3 id="repl"> ? </h3>
+          
+          <button onclick="Replace()">NO</button>
+          <button onclick="Replace1()">YES</button>
+          </div>
+          <script>
+              function Replace(){
+                  var str=document.getElementById("repl").innerHTML;
+                  var res=str.replace("?","NO I am not a smoker");
+                  document.getElementById("repl").innerHTML=res;
+              }
+              
+                function Replace1(){
+                  var str=document.getElementById("repl").innerHTML;
+                  var res=str.replace("?","YES I am a smoker");
+                  document.getElementById("repl").innerHTML=res;
+              }
+          </script>
+          
+      </div>
+
+        
+         <div id="con">
+          <pre><b>Where the information useful choose a number between 5-10
+              (5-No, 6-Not really, 7-A bit, 8-So-So, 9-Yes, 10-Yes a lot)</b></pre>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="message"></p>
+        </div>
+
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Med<span>Pharm</span></h3>
+
+				<p class="footer-links">
+					<a href="../index.html">Home</a>
+					·
+					<a href="hair.html">Hair</a>
+					·
+					<a href="barna.html">Drug</a>
+					·
+					<a href="health.html">Health</a>
+					·
+					<a href="../blej/blej.html">Shop</a>
+					·
+					<a href="../kontakt/kontakti.html">Contact</a>
+				</p>
+
+				<p class="footer-company-name">MedPharm &copy; 2017</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+                                    <img src="../image/location.png" alt="location">
+					<p><span>21 Revolution Street</span> Prishtine, Kosov</p>
+				</div>
+
+				<div>
+					<img src="../image/phone.png" alt="phone">
+					<p>+1 555 123456</p>
+				</div>
+
+				<div>
+					<img src="../image/email.png" alt="email">
+					<p>medpharm@med.com</p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>MedPharm</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://web.facebook.com/?_rdc=1&_rdr"> <img src="../image/facebook.png" alt="Flickr"/></a>
+                                        <a href="https://www.instagram.com/"> <img src="../image/insta.jpg" alt="Flickr"/></a>
+                                        <a href="https://twitter.com/"> <img src="../image/twitter.png" alt="Flickr"/></a>
+                                       
+					
+
+				</div>
+
+			</div>
+
+		</footer>
+      
+</body>
+
+<script>
+function myFunction() {
+    var message, x;
+    message = document.getElementById("message");
+    message.innerHTML = "";
+    x = document.getElementById("demo").value;
+     if (x>=5 && x<=10){
+        message.innerHTML="Thank you for your rating";}
+    else{
+    try { 
+        if(x == "")  throw "empty";
+        if(isNaN(x)) throw "not a number";
+        x = Number(x);
+        if(x < 5)    throw "too low";
+        if(x > 10)   throw "too high";
+    }
+    catch(err) {
+        message.innerHTML = "Input is " + err;
+    }
+    }
+}
+</script>
+
+
+<script >
+    function computeBMI()
+    {
+        //Obtain user inputs
+        var height=Number(document.getElementById("height").value);
+        var heightunits=document.getElementById("heightunits").value;
+        var weight=Number(document.getElementById("weight").value);
+        var weightunits=document.getElementById("weightunits").value;
+
+
+        //Convert all units to metric
+        if (heightunits=="inches") height/=39.3700787;
+        if (weightunits=="lb") weight/=2.20462;
+
+        //Perform calculation
+        var BMI=weight/Math.pow(height,2);
+
+        //Display result of calculation
+        document.getElementById("output").innerText=Math.round(BMI*100)/100;
+
+        var output =  Math.round(BMI*100)/100;
+        if (output<18.5)
+        document.getElementById("comment").innerText = "Underweight";
+      else   if (output>=18.5 && output<=25)
+        document.getElementById("comment").innerText = "Normal";
+     else   if (output>=25 && output<=30)
+        document.getElementById("comment").innerText = "Obese";
+     else   if (output>30)
+        document.getElementById("comment").innerText = "Overweight";
+       // document.getElementById("answer").value = output; 
+    }
+</script>
+
+</html>
+
+
+
+
